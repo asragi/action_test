@@ -28,7 +28,7 @@ async function run() {
       const relativePath = path.relative(cwd, filePath);
       const charCount = content.length;
       rows.push(`| ${relativePath} | ${charCount} |`);
-      totak += charCount;
+      total += charCount;
     }
     rows.push(`| Total | ${total} |`);
     const body = rows.join("\n");
